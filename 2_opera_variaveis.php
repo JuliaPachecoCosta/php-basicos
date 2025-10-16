@@ -1,8 +1,7 @@
 <?php
 
 // Montagem da url
-// http://localhost/php-basicos/php-basicos(alunos)/2_opera_variaveis.php?numero1=10&numero2=5
-// http://localhost/php-basicos/php-basicos(alunos)/php-basicos(alunos)/2_opera_variaveis.php?numero1=10&numero2=5
+// http://localhost/php-basicos/2_opera_variaveis.php?numero1=10&numero2=5
 
 
 // Variáveis que recebem valores pela URL (Método GET)
@@ -16,7 +15,9 @@ if (isset($numero1) && ($numero2)) {
 
 // Cálculos 
 $soma = $numero1 + $numero2;
+$multiplicacao =  $numero1 * $numero2;
 
 //Exibe
 echo "Soma: $soma <br>";
+echo "Multiplicação: $multiplicacao <br>"
 ?>
