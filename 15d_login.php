@@ -34,11 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <label>Cor favorita:</label><br>
         <select name="cor" required>
             <option value="">-- Selecione --</option>
-            <option value="lightblue">Azul Claro</option>
-            <option value="lightgreen">Verde Claro</option>
+            <option value="lightblue">Azul Marinho</option>
+            <option value="lightgreen">Vinho</option>
             <option value="lightpink">Rosa Claro</option>
-            <option value="lightyellow">Amarelo Claro</option>
-            <option value="lightgray">Cinza Claro</option>
+            <option value="lightyellow">Lilás</option>
+            <option value="lightgray">Verde Claro</option>
         </select><br><br>
 
         <button type="submit">Entrar</button>

@@ -20,6 +20,6 @@ $cor = $_SESSION["cor"];
     <h1> Bem-vindo, <?php echo htmlspecialchars($nome); ?>!</h1>
     <p>Essa página foi personalizada com sua cor favorita.</p>
 
-    <a href="15d_logout.php">Sair E Limpar perfil</a>
+    <a href="15d_logout.php">Sair e Limpar perfil</a>
 </body>
 </html>
