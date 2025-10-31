@@ -8,7 +8,7 @@ $dbname = "exercicio";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 //Verifica a conexão 
-if ($conn->Connect_error) {
+if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 
@@ -20,6 +20,9 @@ $result = $conn->query($sql);
 if ($result->num_rows >0) {
     echo "<table border='1'>";
     echo "<tr><th>ID</th><th>Nome</th><th>Email</th></tr>";
+
+    // fetch_assoc() - Método que retorna em linha algo que 
+    // vem de um array associativo (Como: id, nome, email)
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>" . $row['id'] . "</td>";

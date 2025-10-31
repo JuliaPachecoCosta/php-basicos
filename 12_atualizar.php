@@ -13,7 +13,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 //Verifica a conexão 
 if ($conn->connect_error) {
-    die("Falha na conexão; " . $conn->connects_error);
+    die("Falha na conexão; " . $conn->connect_error);
 }
 
 // Inicializa a variável $cliente com null
@@ -40,8 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
 
+    // SQL de Atualização
     $sql = "UPDATE clientes SET nome='$nome', email ='$email' WHERE id='$id'";
 
+    // Mensagem (Feedback para usuário)
     if ($conn->query($sql) == TRUE) {
         echo "<p>Cliente atualizado com sucesso!</p>";
     } else {
